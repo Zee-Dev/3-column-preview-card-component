@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+f */
+
+:root {
+    /* ### Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    --Transparent: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.935rem;
+    width: 100%;
+    height: 100vh;
+    line-height: 1.6;
+    background-color: var(--Very-light-gray);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 0.3em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5em 0;
+    max-width: 500px;
+}
+
+.section_text {
+    color: var(--Transparent);
+    margin: 0 0 3em
+}
+
+.first_section {
+    background-color: var(--Bright-orange);
+    border-radius: 7px 7px 0 0;
+}
+
+.second_section {
+    background-color: var(--Dark-cyan);
+}
+
+.third_section {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 7px 7px;
+}
+
+.sections {
+    padding: 3em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--Very-light-gray);
+    padding: 0.8em 2em;
+    border-radius: 30px;
+
+}
+
+.sedans {
+    color: var(--Bright-orange);
+}
+
+.suv {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    color: var(--Very-dark-cyan);
+}
+
+.sedans:hover,
+.suv:hover,
+.luxury:hover {
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+}
+
+.sedans:hover {
+    background-color: var(--Bright-orange);
+
+}
+
+.suv:hover {
+    background-color: var(--Dark-cyan);
+
+}
+
+.luxury:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+@media(min-width: 800px) {
+
+    .container {
+        max-width: 900px;
+        padding: 0;
+    }
+
+    .row {
+       
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .sections {
+        width: 100%;
+        
+    }
+
+    .section_text{
+        margin-bottom: 0;
+    }
+
+
+
+    .first_section {
+        border-radius: 10px 0 0 10px;
+        /* flex-grow: 1; */
+    }
+
+    .third_section {
+        border-radius: 0 10px 10px 0;
+       
+    } 
+
+    .btn {
+        margin: 4em 0 0;
+    }
+}
